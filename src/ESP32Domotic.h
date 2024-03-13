@@ -10,6 +10,9 @@ PubSubClient    _mqttClient(_wifiClient);
 
 class ESP32Domotic {
 
+    ESP32Domotic();
+    ~ESP32Domotic();
+
     public:
         void init();
         void loop();
