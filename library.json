@@ -7,12 +7,9 @@
       "version": "2.8.0"
     }
   ],
-  "frameworks": [
-    "arduino"
-  ],
-  "platforms": [
-    "espressif32"
-  ],
+  "exclude": ["test", "dummy.*"],
+  "frameworks": "arduino",
+  "platforms": "espressif32",
   "authors": [
     {
       "name": "Emiliano Schiano",
