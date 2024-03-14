@@ -1,3 +1,4 @@
 .pio
 *.tar.gz
 .DS_Store
+.vscode
