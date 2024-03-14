@@ -1,5 +1,5 @@
-#ifndef ESP32_CONFIG_H
-#define ESP32_CONFIG_H
+#ifndef ESP32Config_h
+#define ESP32Config_h
 
 #include <Arduino.h>
 #include <WiFi.h>

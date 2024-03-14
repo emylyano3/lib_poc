@@ -1,5 +1,5 @@
-#ifndef ESP_CONFIG_PARAM_H
-#define ESP_CONFIG_PARAM_H
+#ifndef ConfigParam_h
+#define ConfigParam_h
 
 #include <vector>
 #include <string>
