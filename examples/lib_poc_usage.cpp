@@ -1,5 +1,3 @@
-#include <WebServer.h>
-#include <DNSServer.h>
 #include <ESP32Domotic.h>
 
 ESP32Domotic _domoticModule;
