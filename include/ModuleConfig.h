@@ -25,10 +25,10 @@ const char HTTP_END[]                       = "</div></body></html>";
 #define INVALID_PIN_NO 255
 #endif
 
-class ESP32Config {
+class ModuleConfig {
     public:
-        ESP32Config();
-        ~ESP32Config();
+        ModuleConfig();
+        ~ModuleConfig();
 
         /* launch methods */
         bool            connectWifiNetwork(bool existConfig);
@@ -51,7 +51,7 @@ class ESP32Config {
         uint8_t     getParamsCount();
 
         //called when AP mode and config portal is started
-        void        setAPCallback (std::function<void(ESP32Config*)> callback);
+        void        setAPCallback (std::function<void(ModuleConfig*)> callback);
         
         //called when connecting station to AP
         void        setStationNameCallback (std::function<const char*(void)> callback);
@@ -102,7 +102,7 @@ class ESP32Config {
         IPAddress           _ap_static_sn;
 
         /* Callbacks */
-        std::function<void(ESP32Config*)>   _apcallback;
+        std::function<void(ModuleConfig*)>   _apcallback;
         std::function<const char*(void)>    _stationNameCallback;
         std::function<void(void)>           _savecallback;
         
